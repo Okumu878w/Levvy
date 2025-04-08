@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - HM Medical Treatment Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('https://img.freepik.com/free-photo/blurred-hospital-background_110488-1552.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            z-index: -1;
+        }
+
+        header {
+            background-color: #4a4a4a;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: relative;
+        }
+
+        .logo {
+            background-color: #1e90ff;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .logo-text {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .logo::before {
+            content: "★";
+            position: absolute;
+            color: white;
+            font-size: 12px;
+            top: 5px;
+        }
+
+        .title {
+            color: #ffd700;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .contact {
+            color: #00ff00;
+            font-size: 14px;
+            text-align: right;
+        }
+
+        nav {
+            background-color: #00d4ff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a.active {
+            text-decoration: underline;
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .sign-up, .login {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            position: relative;
+        }
+
+        h2 {
+            color: #1e90ff;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .news-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .news-item {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-item h3 {
+            color: #1e90ff;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .news-date {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .news-content {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #4a4a4a;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="logo-text">HM</span>
+        </div>
+        <div class="title">HM medical treatment solutions</div>
+        <div class="contact">Contact Details<br>+254712345678</div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About us.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="news.html" class="active">News</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <button class="sign-up"><a href="register.html">SIGN UP</a></button>
+            <button class="login"><a href="login.html">LOGIN</a></button>
+        </div>
+    </nav>
+    <main>
+        <h2>Latest News</h2>
+        <div class="news-container">
+            <div class="news-item">
+                <h3>New Emergency Wing Opening</h3>
+                <div class="news-date">April 7, 2025</div>
+                <div class="news-content">
+                    We are excited to announce the opening of our new state-of-the-art emergency wing, 
+                    equipped with the latest medical technology to provide faster and more efficient 
+                    emergency care to our patients.
+                </div>
+            </div>
+
+            <div class="news-item">
+                <h3>Annual Health Check-up Campaign</h3>
+                <div class="news-date">April 6, 2025</div>
+                <div class="news-content">
+                    Join us for our annual free health check-up campaign running throughout this month. 
+                    Get your vital signs checked and consult with our specialists at no cost.
+                </div>
+            </div>
+
+            <div class="news-item">
+                <h3>New Pediatric Specialist Joins Team</h3>
+                <div class="news-date">April 5, 2025</div>
+                <div class="news-content">
+                    We welcome Dr. Amina Hassan to our pediatric department. With her extensive experience 
+                    in child healthcare, she will enhance our ability to serve our young patients better.
+                </div>
+            </div>
+
+            <div class="news-item">
+                <h3>Medical Equipment Upgrade</h3>
+                <div class="news-date">April 4, 2025</div>
+                <div class="news-content">
+                    We've recently upgraded our diagnostic imaging equipment, including new MRI and CT 
+                    scanners, to provide more accurate and faster diagnostic services.
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 HM Medical Treatment Solutions. All rights reserved.</p>
+    </footer>
+    <script>
+        // Optional: Function to display current date (can be used if you want to automate date display)
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentDate = new Date().toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            // You could use this to automatically update dates, but manual updates are shown in HTML
+            console.log('Current date:', currentDate);
+        });
+    </script>
+</body>
+</html>

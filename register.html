@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Registration - HM Medical Treatment Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('https://img.freepik.com/free-photo/blurred-hospital-background_110488-1552.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            z-index: -1;
+        }
+
+        header {
+            background-color: #4a4a4a;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: relative;
+        }
+
+        .logo {
+            background-color: #1e90ff;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .logo-text {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .logo::before {
+            content: "★";
+            position: absolute;
+            color: white;
+            font-size: 12px;
+            top: 5px;
+        }
+
+        .title {
+            color: #ffd700;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .contact {
+            color: #00ff00;
+            font-size: 14px;
+            text-align: right;
+        }
+
+        nav {
+            background-color: #00d4ff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a.active {
+            text-decoration: underline;
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .sign-up, .login {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            position: relative;
+        }
+
+        h2 {
+            color: #1e90ff;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+            transition: background-color 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #1c86ee;
+        }
+
+        footer {
+            background-color: #4a4a4a;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        .login-link {
+            text-align: center;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+
+        .login-link a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="logo-text">HM</span>
+        </div>
+        <div class="title">HM medical treatment solutions</div>
+        <div class="contact">Contact Details<br>+254712345678</div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About us.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="news.html">News</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <button class="sign-up">SIGN UP</button>
+            <button class="login"><a href="login.html">LOGIN</a></button>
+        </div>
+    </nav>
+    <main>
+        <h2>Staff Registration</h2>
+        <form id="register-form">
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="staff-id">Staff ID</label>
+                <input type="text" id="staff-id" name="staff-id" placeholder="Enter your staff ID" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="department">Department</label>
+                <select id="department" name="department" required>
+                    <option value="">Select Department</option>
+                    <option value="emergency">Emergency</option>
+                    <option value="surgery">Surgery</option>
+                    <option value="pediatrics">Pediatrics</option>
+                    <option value="administration">Administration</option>
+                    <option value="nursing">Nursing</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+            </div>
+            <button type="submit">REGISTER</button>
+        </form>
+        <div class="login-link">
+            Already have an account? <a href="login.html">LOGIN</a>
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 HM Medical Treatment Solutions. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const registerForm = document.getElementById('register-form');
+
+            registerForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                const fullName = document.getElementById('full-name').value;
+                const staffId = document.getElementById('staff-id').value;
+                const email = document.getElementById('email').value;
+                const department = document.getElementById('department').value;
+                const password = document.getElementById('password').value;
+                const confirmPassword = document.getElementById('confirm-password').value;
+
+                if (password !== confirmPassword) {
+                    alert('Passwords do not match!');
+                    return;
+                }
+
+                if (fullName && staffId && email && department && password) {
+                    alert(`Registration successful!\nName: ${fullName}\nStaff ID: ${staffId}\nEmail: ${email}\nDepartment: ${department}`);
+                    registerForm.reset();
+                } else {
+                    alert('Please fill in all required fields.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

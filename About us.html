@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - HM Medical Treatment Solutions</title>
+    <style>
+        /* CSS Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('https://img.freepik.com/free-photo/blurred-hospital-background_110488-1552.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            z-index: -1;
+        }
+
+        header {
+            background-color: #4a4a4a;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: relative;
+        }
+
+        .logo {
+            background-color: #1e90ff;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .logo-text {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .logo::before {
+            content: "★";
+            position: absolute;
+            color: white;
+            font-size: 12px;
+            top: 5px;
+        }
+
+        .title {
+            color: #ffd700;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .contact {
+            color: #00ff00;
+            font-size: 14px;
+            text-align: right;
+        }
+
+        nav {
+            background-color: #00d4ff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a.active {
+            text-decoration: underline;
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .sign-up, .login {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+        }
+
+        .about-section {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .about-section h1 {
+            color: #1e90ff;
+            font-size: 28px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .history, .progress, .staff {
+            margin-bottom: 30px;
+        }
+
+        .history h2, .progress h2, .staff h2 {
+            color: #333;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .history p, .progress p, .staff p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .progress {
+            background-image: url('https://t3.ftcdn.net/jpg/08/01/10/06/360_F_801100675_XJiaAeAyVWw1DWATE1wWghgUanPYXGyZ.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 20px;
+            border-radius: 8px;
+            position: relative;
+            color: #fff;
+        }
+
+        .progress::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 0;
+            border-radius: 8px;
+        }
+
+        .progress h2, .progress p {
+            position: relative;
+            z-index: 1;
+            color: #fff;
+        }
+
+        .staff .highlight {
+            color: #1e90ff;
+            font-weight: bold;
+        }
+
+        .staff ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        .staff ul li {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        footer {
+            background-color: #4a4a4a;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="logo-text">HM</span>
+        </div>
+        <div class="title"><b>HM medical treatment solutions</b></bHM></div>
+        <div class="contact">Contact Details<br>+254712345678</div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#" class="active">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="news.html">News</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <button class="sign-up"><a href="register.html">SIGN UP</a></button>
+            <button class="login"><a href="login.html">LOGIN</a></button>
+        </div>
+    </nav>
+    <main>
+        <section class="about-section">
+            <h1>About Us</h1>
+            <div class="history">
+                <h2>Our History</h2>
+                <p>HM Medical Treatment Solutions was founded in 1995 with a mission to provide cutting-edge medical care to the community. Starting as a small clinic with a handful of dedicated professionals, we have grown into a leading healthcare provider, serving thousands of patients annually.</p>
+            </div>
+            <div class="progress">
+                <h2>Our Progress</h2>
+                <p>Over the past three decades, HM has expanded its facilities to include state-of-the-art technology and specialized departments. We’ve introduced innovative treatments, established partnerships with global health organizations, and received numerous awards for excellence in patient care. Today, we are proud to be at the forefront of medical innovation, continuously improving outcomes for our patients.</p>
+            </div>
+            <div class="staff">
+                <h2>Our Team</h2>
+                <p>At HM Medical Treatment Solutions, our team is our greatest asset. We currently have <span class="highlight">150 doctors</span> and <span class="highlight">400 staff members</span> working tirelessly to ensure the best care for our patients. Our professionals are highly trained, with expertise across various medical fields, and are committed to delivering compassionate and personalized care.</p>
+                <p>We operate across <span class="highlight">12 specialized departments</span>, ensuring comprehensive care for all our patients. Our departments include Cardiology, Neurology, Orthopedics, Pediatrics, Oncology, and more.</p>
+                <p>Our team of doctors includes the following types of specialists:</p>
+                <ul>
+                    <li>Cardiologists</li>
+                    <li>Neurologists</li>
+                    <li>Orthopedic Surgeons</li>
+                    <li>Pediatricians</li>
+                    <li>Oncologists</li>
+                    <li>General Surgeons</li>
+                    <li>Endocrinologists</li>
+                    <li>Dermatologists</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 HM Medical Treatment Solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>
